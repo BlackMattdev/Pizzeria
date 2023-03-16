@@ -1,0 +1,7 @@
+@media (min-width: 992px) {
+    .navbar {
+        &__links {
+            transform: translateX(0);
+        }
+    }
+}
