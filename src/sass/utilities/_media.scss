@@ -1,7 +1,18 @@
 @media (min-width: 992px) {
-    .navbar {
-        &__links {
-            transform: translateX(0);
-        }
-    }
+	.navbar {
+		&__hamburger {
+			display: none;
+		}
+		&__links {
+			position: static;
+			flex-direction: row;
+            margin-right: 2em;
+			width: auto;
+			background: none;
+			transform: translateX(0);
+			&-link {
+				padding: 0 1em;
+			}
+		}
+	}
 }
