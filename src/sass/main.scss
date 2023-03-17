@@ -26,6 +26,7 @@ a {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 100;
 	&__nav {
 		display: flex;
 		align-items: center;
@@ -35,10 +36,10 @@ a {
 	}
 	&__logo {
 		padding: 1em;
-		text-shadow: 2px 2px 4px #000;
+		text-shadow: none;
 		transition: text-shadow 0.3s;
 		&:hover {
-			text-shadow: none;
+			text-shadow: 2px 2px 4px #b4b4b4;
 		}
 
 		&-link {
@@ -55,6 +56,7 @@ a {
 	}
 	&__hamburger {
 		padding: 0 1em;
+		color: $white;
 	}
 
 	&__links {
@@ -74,8 +76,11 @@ a {
 		}
 		&-link {
 			padding: 0.5em;
-			color: $black;
-			transition: color 0.3s;
+			color: $white;
+			transition: color 0.3s, text-shadow 0.3s;
+			&:hover {
+				text-shadow: 2px 2px 4px #b4b4b4;
+			}
 			&:hover:first-child {
 				color: $green;
 			}
@@ -86,6 +91,27 @@ a {
 				color: $red;
 			}
 		}
+	}
+}
+
+// HEADER
+
+.header {
+	position: relative;
+	// margin-top: 80px;
+	width: 100%;
+	height: 100%;
+	min-height: 400px;
+	background-image: url('../img/restaurantSmall.jpg');
+	background-position: center;
+	background-size: cover;
+	z-index: -10;
+	&__shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: -5;
 	}
 }
 

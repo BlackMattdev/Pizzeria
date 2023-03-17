@@ -1,3 +1,8 @@
+@media (min-width: 768px) {
+	.header {
+		background-image: url('../img/restaurantBig.jpg');
+	}
+}
 @media (min-width: 992px) {
 	.navbar {
 		&__hamburger {
@@ -6,7 +11,7 @@
 		&__links {
 			position: static;
 			flex-direction: row;
-            margin-right: 2em;
+			margin-right: 2em;
 			width: auto;
 			background: none;
 			transform: translateX(0);
@@ -14,5 +19,10 @@
 				padding: 0 1em;
 			}
 		}
+	}
+}
+@media (min-width: 1200px) {
+	.header {
+		background-position: 0% 65%;
 	}
 }
