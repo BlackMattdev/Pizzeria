@@ -13,7 +13,7 @@ html {
 }
 
 body {
-	background-color: gray;
+	font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -36,6 +36,7 @@ a {
 	}
 	&__logo {
 		padding: 1em;
+		font-family: 'Edu NSW ACT Foundation', cursive;
 		text-shadow: none;
 		transition: text-shadow 0.3s;
 		&:hover {
@@ -112,6 +113,38 @@ a {
 		height: 100%;
 		background-color: rgba(0, 0, 0, 0.6);
 		z-index: -5;
+	}
+}
+
+// ABOUTUS
+
+.aboutus {
+	&__box {
+		display: flex;
+		flex-direction: column;
+		margin: 10px;
+		padding: 10px;
+		overflow: hidden;
+
+		&-img {
+			width: 100%;
+			border-radius: 8px;
+		}
+		&-text {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 20px;
+			// text-align: left;
+			&-title {
+				font-size: 2.5rem;
+				line-height: 200%;
+			}
+			&-description {
+				font-size: 1.5rem;
+				line-height: 200%;
+			}
+		}
 	}
 }
 
