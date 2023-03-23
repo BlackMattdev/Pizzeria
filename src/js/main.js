@@ -1,6 +1,6 @@
 const hamburger = document.querySelector('.navbar__hamburger');
 const navmobile = document.querySelector('.navbar__links');
-
+const navbar = document.querySelector('.navbar')
 const footerYear = document.querySelector('.footer__year');
 
 const handleNav = () => {
@@ -15,5 +15,12 @@ const handleCurrentYear = () => {
 	footerYear.innerText = year;
 };
 
+
+const handleNavBgc = () => {
+    navbar.classList.toggle('navbar--active', window.scrollY > 0)
+}
+
+
 handleCurrentYear();
 hamburger.addEventListener('click', handleNav);
+window.addEventListener('scroll', handleNavBgc)
