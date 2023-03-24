@@ -157,6 +157,25 @@ a {
 	}
 }
 
+// PROMOTION
+
+.promotion {
+	&__box {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 2rem;
+		padding: 1rem;
+		text-align: center;
+		&-icon {
+			padding: 1rem;
+			font-size: 5rem;
+		}
+		&-text {
+			font-size: 1.5rem;
+		}
+	}
+}
+
 // FOOTER
 
 .footer {
