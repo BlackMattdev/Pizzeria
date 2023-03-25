@@ -169,6 +169,8 @@ a {
 		&-icon {
 			padding: 1rem;
 			font-size: 5rem;
+			text-shadow: 0 0 5px #808080;
+			
 		}
 		&-text {
 			font-size: 1.5rem;
@@ -182,6 +184,7 @@ a {
 	font-size: 1.5rem;
 	text-align: center;
 	background-color: $darkgray;
+	color: $white;
 }
 
 @import './utilities/media';
