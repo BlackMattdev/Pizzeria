@@ -160,8 +160,6 @@ a {
 // PROMOTION
 
 .promotion {
-
-
 	&__box {
 		display: flex;
 		flex-direction: column;
@@ -173,10 +171,51 @@ a {
 			padding: 1rem;
 			font-size: 5rem;
 			text-shadow: 0 0 5px #808080;
-			
 		}
 		&-text {
 			font-size: 1.5rem;
+		}
+	}
+}
+
+// CONTACT
+
+.contact {
+	position: relative;
+	overflow: hidden;
+	.white-block-left {
+		background-color: red;
+	}
+	&__form,
+	&__form-top {
+		display: flex;
+		flex-direction: column;
+	}
+	&__form-label {
+		margin-bottom: 0.5em;
+		text-transform: uppercase;
+	}
+
+	&__form-textarea {
+		min-width: 100%;
+		width: 100%;
+		min-height: 150px;
+	}
+	&__form-btn {
+		align-self: flex-end;
+		margin-top: 10px;
+		padding: 1em;
+		width: 100%;
+		max-width: 300px;
+		border: none;
+		border-radius: 8px;
+		background-color: $darkgray;
+		color: $white;
+		transition: background-color 0.3s, color 0.3s;
+		cursor: pointer;
+		&:hover {
+			background-color: $gray;
+			color: $darkgray;
 		}
 	}
 }

@@ -48,7 +48,7 @@
     </header>
 
     <main>
-        <section class="aboutus" id="aboutus">
+        <section class="aboutus section-padding" id="aboutus">
             <div class="wrapper">
 
                 <h2 class="section-heading">O nas</h2>
@@ -93,7 +93,7 @@
             </div>
         </section>
 
-        <section class="promotion" id="promotion">
+        <section class="promotion section-padding section-dark" id="promotion">
             <div class="wrapper">
 
                 <h2 class="section-heading">Promocje</h2>
@@ -118,13 +118,30 @@
         </section>
 
 
-        <section class="contact" id="contact">
+        <section class="contact section-padding" id="contact">
             <div class="wrapper">
                 <h2 class="section-heading">Kontakt</h2>
+                <form class="contact__form">
+
+                    <div class="contact__form-top">
+                        <label for="name" class="contact__form-label">Imię i nazwisko:</label>
+                        <input type="text" class="contact__form-input" id="name">
+
+                        <label for="email" class="contact__form-label">Adres e-mail:</label>
+                        <input type="text" class="contact__form-input" id="email">
+                    </div>
+
+
+                    <label for="msg" class="contact__form-label">Wiadomość:</label>
+                    <textarea name="msg" class="contact__form-textarea"></textarea>
+
+                    <button type="submit" class="contact__form-btn">Wyślij</button>
+                </form>
             </div>
         </section>
     </main>
-    <footer class="footer">
+
+    <footer class="footer section-dark">
     <p class="footer__bottom-text">© <span class="footer__year"></span> "La Pizza Felice"</p>
 </footer>
 
