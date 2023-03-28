@@ -183,9 +183,6 @@ a {
 .contact {
 	position: relative;
 	overflow: hidden;
-	.white-block-left {
-		background-color: red;
-	}
 	&__form,
 	&__form-top {
 		display: flex;
@@ -195,11 +192,25 @@ a {
 		margin-bottom: 0.5em;
 		text-transform: uppercase;
 	}
-
+	&__form-input {
+		margin-bottom: 1rem;
+		padding: 0.6em 1.2em;
+		border-radius: 8px;
+		border-color: $darkgray;
+		font-size: 1.6rem;
+	}
 	&__form-textarea {
+		margin-bottom: 1rem;
+		padding: 0.6em 1.2em;
+		border-radius: 8px;
+		border-color: $darkgray;
+		font-size: 1.6rem;
+
 		min-width: 100%;
 		width: 100%;
 		min-height: 150px;
+		max-height: 300px;
+		resize: vertical;
 	}
 	&__form-btn {
 		align-self: flex-end;
