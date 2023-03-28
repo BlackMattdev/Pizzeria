@@ -238,6 +238,38 @@ a {
 	text-align: center;
 	background-color: $darkgray;
 	color: $white;
+	&__boxes {
+		display: flex;
+		justify-content: space-around;
+		padding: 1.5rem;
+	}
+	&__box {
+		&-left {
+			&-logo {
+				font-family: 'Edu NSW ACT Foundation', cursive;
+				font-size: 2.5rem;
+			}
+			&-address {
+				font-size: 1.5rem;
+			}
+		}
+		&-center {
+			display: flex;
+			align-items: center;
+			&-link {
+				padding: 10px;
+				font-size: 3rem;
+				color: $white;
+				transition: color 0.3s;
+				&:hover {
+					color: $gray;
+				}
+			}
+		}
+	}
+	&__bottom-text {
+		margin-top: 10px;
+	}
 }
 
 @import './utilities/media';
