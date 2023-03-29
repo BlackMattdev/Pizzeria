@@ -244,6 +244,7 @@ a {
 		padding: 1.5rem;
 	}
 	&__box {
+		align-items: center;
 		&-left {
 			&-logo {
 				font-family: 'Edu NSW ACT Foundation', cursive;
@@ -254,12 +255,15 @@ a {
 			}
 		}
 		&-center {
+			display: none;
+		}
+		&-right {
 			display: flex;
-			align-items: center;
+			flex-direction: column;
 			&-link {
-				padding: 10px;
-				font-size: 3rem;
+				padding-bottom: 10px;
 				color: $white;
+				font-size: 1rem;
 				transition: color 0.3s;
 				&:hover {
 					color: $gray;
