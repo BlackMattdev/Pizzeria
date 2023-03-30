@@ -45,19 +45,24 @@
 			}
 		}
 	}
-}
-.contact {
-	&__map {
-		flex-direction: row;
-		margin-left: 50px;
-		justify-content: center;
-		&-text {
-			&-mobile {
-				display: none;
+	.contact {
+		&__map {
+			flex-direction: row;
+			margin-left: 50px;
+			justify-content: center;
+			&-iframe {
+				height: 400px;
+				width: 400px;
+
 			}
-			&-desktop {
-				display: flex;
-				margin-left: 20px;
+			&-text {
+				&-mobile {
+					display: none;
+				}
+				&-desktop {
+					display: flex;
+					margin-left: 20px;
+				}
 			}
 		}
 	}
@@ -90,6 +95,15 @@
 		}
 		&__box {
 			width: 30%;
+		}
+	}
+	.contact {
+		&__map {
+			&-iframe {
+				height: 450px;
+				width: 600px;
+			}
+
 		}
 	}
 }
