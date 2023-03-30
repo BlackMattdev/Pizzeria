@@ -46,6 +46,22 @@
 		}
 	}
 }
+.contact {
+	&__map {
+		flex-direction: row;
+		margin-left: 50px;
+		justify-content: center;
+		&-text {
+			&-mobile {
+				display: none;
+			}
+			&-desktop {
+				display: flex;
+				margin-left: 20px;
+			}
+		}
+	}
+}
 @media (min-width: 992px) {
 	.navbar {
 		&__hamburger {
