@@ -241,7 +241,7 @@ a {
 			width: 300px;
 			border-radius: 8px;
 		}
-		
+
 		&-text {
 			align-items: center;
 			padding-top: 20px;
@@ -253,6 +253,12 @@ a {
 			}
 		}
 	}
+}
+
+// MENU
+.menu {
+	position: relative;
+	margin-top: 80px;
 }
 
 // FOOTER
