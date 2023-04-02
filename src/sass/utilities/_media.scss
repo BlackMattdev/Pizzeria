@@ -65,12 +65,6 @@
 			}
 		}
 	}
-	.menu {
-		&__types {
-			flex-direction: row;
-			justify-content: space-around;
-		}
-	}
 }
 @media (min-width: 992px) {
 	.navbar {
@@ -107,6 +101,33 @@
 			&-iframe {
 				height: 450px;
 				width: 600px;
+			}
+		}
+	}
+	.menu {
+		&__types {
+			flex-direction: row;
+			justify-content: space-around;
+		}
+		&__items {
+			margin-left: 60px;
+			&-title {
+				text-align: left;
+			}
+		}
+		&__item {
+			flex-direction: row;
+			flex-wrap: wrap;
+			text-align: left;
+			&-name {
+				width: 50%;
+			}
+			&-price {
+				width: 50%;
+			}
+			&-composition{
+				width: 50%;
+				padding: 0;
 			}
 		}
 	}
