@@ -281,18 +281,48 @@ a {
 			font-weight: bold;
 			text-align: center;
 		}
+		&-line{
+			position: relative;
+			margin: auto;
+			width: 80%;
+			height: 5px;
+			order: 0.5px dashed black;
+			&::before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 100%;
+				width: 33.33%;
+				background-color: $green;
+			  }
+			  &::after {
+				content: "";
+				position: absolute;
+				left: 66.66%;
+				top: 0;
+				height: 100%;
+				width: 33.33%;
+				background-color: $red;
+			  }
+		}
 	}
 	&__item {
 		display: flex;
 		flex-direction: column;
-		padding: 10px 0;
+		margin: 10px auto;
+		padding: 10px 5px;
+		width: 80%;
 		font-size: 1.8rem;
 		text-align: center;
+
+		border-radius: 8px;
 		&-name {
 			font-size: 2rem;
 		}
 		&-price {
 			font-size: 2.5rem;
+			font-weight: 800;
 			margin-bottom: 5px;
 		}
 		&-composition{
